@@ -17,6 +17,13 @@ type DB struct {
 	store *badgerhold.Store
 }
 
+/*
+This code defines a function called New that takes a string argument representing a database path and returns
+a pointer to a DB object or an error. The function creates a new Badgerhold object with a custom encoder and
+decoder to compress data using Flate and store it as JSON. The Badgerhold object is initialized with default
+options and the database path passed as an argument. Finally, a new DB object is returned with the
+Badgerhold object as its store attribute.
+*/
 func New(dbPath string) (*DB, error) {
 	store, err := badgerhold.Open(
 		badgerhold.Options{
