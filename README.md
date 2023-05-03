@@ -15,7 +15,7 @@ Many thanks to the original team for brainstorming and bringing forth this idea.
 
 ### Here is a basic structure of the *Forum Application*
 
-#### We can divide the application structure into the following files/modules:
+#### We can divide the application structure into the following files/modules
 
 **main.go** - The entry point of the application that initializes the ABCI application and starts the server.
 
